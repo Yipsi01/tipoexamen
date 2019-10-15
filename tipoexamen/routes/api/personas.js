@@ -28,8 +28,16 @@ router.get ('/',(req,res,next)=>{
 });              //METODO GET
 
 router.post('/', (req,res,next)=>{
-    res.status(403).json({msg:"not implemented"});
-});    //METODO POST
+    var newPersona = Object.assign(
+    {},
+    personaStruct,
+    { id: uuid()},
+    req.body);
+    
+    Persona.Collection.push(newPersona);
+    res.status(200).json(newPersona);
+    });
+      //METODO POST
 
 rauter.put('/:id', (req,res,next)=>{
     res.status(403)({mgs:"not implemented"});
