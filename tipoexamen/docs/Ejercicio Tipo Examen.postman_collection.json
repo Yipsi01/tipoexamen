@@ -1,0 +1,10 @@
+{
+	"info": {
+		"_postman_id": "d1ee8a4f-e78c-4400-804b-f2100bb85759",
+		"name": "Ejercicio Tipo Examen",
+		"description": "Esta es una colleccion donde estara las pruebas del api una por una",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [],
+	"protocolProfileBehavior": {}
+}
